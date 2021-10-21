@@ -1,0 +1,37 @@
+.TeamList {
+	margin-top: 1em;
+}
+
+.TeamList h2,
+.TeamList h3 {
+	text-align: center;
+}
+
+.TeamList > ul > li {
+	float: left;
+	width: 400px;
+	height: 500px;
+	overflow: auto;
+	border: 1px solid black;
+}
+
+.TeamList > ul,
+.TeamList > ul > li {
+	list-style: none;
+}
+
+.Team li {
+	padding: 0.2em;
+}
+.Team li:hover {
+	cursor: pointer;
+	background: #8cc9ce;
+}
+
+.Team li.selected {
+	background: navy;
+}
+
+.Team li.selected > span {
+	color: white;
+}

@@ -1,0 +1,25 @@
+.PlayerList {
+	position: absolute;
+	left: 0;
+	right: 0;
+	border-left: 1px solid #000;
+	bottom: 0;
+	top: 300px;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.PlayerList li {
+	list-style: none;
+	padding: 0.2em;
+}
+.PlayerList li:hover {
+	cursor: pointer;
+	background: #8cc9ce;
+}
+
+.PlayerList li.selected {
+	background: navy;
+	color: white;
+}

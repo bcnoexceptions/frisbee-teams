@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PlayerList from "./components/PlayerList";
+import SelectedPlayer from "./components/SelectedPlayer";
+import SettingsAndLaunchers from "./components/SettingsAndLaunchers";
+import TeamListUI from "./components/TeamListUI";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "./App.css";
+
+export interface IAppProps {}
+
+export default class App extends React.Component<IAppProps, any> {
+	public render() {
+		return (
+			<div className="App">
+				<div className="rightColumn">
+					<PlayerList />
+					<SelectedPlayer />
+				</div>
+				<div className="leftColumn">
+					<SettingsAndLaunchers />
+					<TeamListUI />
+				</div>
+			</div>
+		);
+	}
 }
-
-export default App;

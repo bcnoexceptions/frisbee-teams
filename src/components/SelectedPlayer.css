@@ -1,0 +1,15 @@
+.SelectedPlayer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 1em;
+	height: 300px;
+	border: 1px solid #333;
+	border-width: 0 0 1px 1px;
+	box-sizing: border-box;
+}
+
+.SelectedPlayer h3 {
+	text-align: center;
+}
